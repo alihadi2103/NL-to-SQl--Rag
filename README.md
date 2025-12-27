@@ -298,7 +298,7 @@ Below are detailed examples showcasing the full capabilities of the NL-to-SQL + 
 
 [Open Demo Notebook](Demos/99%20-%20Demo.ipynb) to see an example of some queries related to post and theire data and other type of question  and you can test .
 
-### 10.Custom Query Engine:
+### 10.1.Custom Query Engine:
 
 since the demo handles posts wich invoke a problem if the question inolves sementic operation so we used a custom Engine that takes two other query engines and used them as tools then determine the query engine tool thats suitable to answer the query, the first is Text to Sql queryengine tool and the other is sementic query retreiver,the full implementation is in the rag module in detail.
 
