@@ -326,3 +326,18 @@ after sql execution and documents retreival the finalize answer is as follow :
 
 
 in the next part will explain in detail  the SqlQueryEngine and How it works 
+
+
+
+### 10.2.Natral Language Sql Query  Engine:
+
+this Engine takes human query then generate the Sql to retreive the relative data and form cristilized answer , it needs the connection to the Database with the database schema in order to responsd the response include the the final pure response along with the retreived nodes (data) from the database and the generated sql to retreive them .
+
+![](./Demos/images/NLSAQlRes.png)
+
+Under the hood this Engine use the NLSql Retreiver to generate  sql and retreive data then forms the final response , the NlSql Retreiveer use the LLM to genrate the SQL to retreive data 
+
+![](./Demos/images/NLSQLREIT.png)
+
+these are the propmts are used  in the Engine to ensure  the Database safety along with getting the best results 
+![](./Demos/images/Prompts.png)
