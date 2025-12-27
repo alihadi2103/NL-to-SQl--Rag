@@ -300,7 +300,7 @@ Below are detailed examples showcasing the full capabilities of the NL-to-SQL + 
 
 ### 10.1.Custom Query Engine:
 
-since the demo handles posts wich invoke a problem if the question inolves sementic operation so we used a custom Engine that takes two other query engines and used them as tools then determine the query engine tool thats suitable to answer the query, the first is Text to Sql queryengine tool and the other is sementic query retreiver,the full implementation is the [talk to django notebook](Demos/18%20-%20Talk%20to%Django.ipynb).
+since the demo handles posts wich invoke a problem if the question inolves sementic operation so we used a custom Engine that takes two other query engines and used them as tools then determine the query engine tool thats suitable to answer the query, the first is Text to Sql queryengine tool and the other is sementic query retreiver,the full implementation is the [talk to django notebook](Demos/18%20-%20Talk%20to%20Django.ipynb).
 
 ![](./Demos/images/CutomEngine.png)
 
