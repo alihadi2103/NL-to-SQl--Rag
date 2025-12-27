@@ -294,7 +294,35 @@ Use intent to guide SQL templates.
 
 ## 10.Examples
 
+Below are detailed examples showcasing the full capabilities of the NL-to-SQL + RAG system, highlighting the end-to-end workflow from natural language input to actionable query results. Each notebook is linked using Markdown for easy access.
+
+[Open Demo Notebook](Demos/99%20-%20Demo.ipynb) to see an example of some queries related to post and theire data and other type of question  and you can test .
+
+### 10.Custom Query Engine:
+
+since the demo handles posts wich invoke a problem if the question inolves sementic operation so we used a custom Engine that takes two other query engines and used them as tools then determine the query engine tool thats suitable to answer the query, the first is Text to Sql queryengine tool and the other is sementic query retreiver,the full implementation is in the rag module in detail.
+
+![](./Demos/images/CutomEngine.png)
 
 
-The architecture is modular, extensible, and suitable for real-world analytical workloads.
+the first example the user asks "what do you make " wich doesnt require any sql generation or queriying ,as demonstrated below it first it deside wich tool has to use and he chose the right one 
 
+![](./Demos/images/SemanticExample.png)
+
+then the response is the closest post in meaning to the query so he used the sementic retreiver 
+
+
+the second example and third  shows analyticl query wich require sql quering ,so the first step is to anlyze the query the task then descide wich query Engine tool that he will use.
+![](./Demos/images/Sqldes.png)
+
+as it has been shown it decided the Sql QueryEnginetool then it generate the necessary sql based on the database schemas wich are provided.
+
+![alt text](./Demos/images/GeneratedSql.png)
+
+
+after sql execution and documents retreival the finalize answer is as follow : 
+
+![](./Demos/images/FinalRespnse.png)
+
+
+in the next part will explain in detail  the SqlQueryEngine and How it works 
