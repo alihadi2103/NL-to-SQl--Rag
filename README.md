@@ -26,7 +26,7 @@ The primary goal of this project is to:
 * Embedding-based schema and context search
 * Django ORM / SQL database integration
 * Modular pipeline (retrieval, generation, execution)
-* Extensible to multimodal (text + image) queries
+
 
 ---
 
@@ -175,7 +175,7 @@ Embeddings allow:
 
 ---
 
-## 7. Extending the System: Natural Language Search + Images
+## 7.## 7. Planned Extension: Multimodal RAG (Design Proposal)
 
 ### 7.1 Motivation
 
@@ -292,9 +292,9 @@ Use intent to guide SQL templates.
 
 ---
 
-## 10. Summary
+## 10.Examples
 
-This project demonstrates a **production-grade approach** to Natural Language SQL using RAG. By grounding LLMs in schema context, validating generated queries, and extending toward multimodal inputs, it forms a strong foundation for intelligent data access in Django-based systems.
+
 
 The architecture is modular, extensible, and suitable for real-world analytical workloads.
 
